@@ -1,0 +1,150 @@
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2,h3 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-top: 10x;
+}
+
+/* ตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse; /* รวมขอบของตาราง */
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* ขอบของตาราง */
+    padding: 10px;
+    text-align: center; /* จัดกลาง */
+}
+
+th {
+    background-color: #2980b9; /* สีพื้นหลังของหัวตาราง */
+    color: white; /* สีตัวอักษรของหัวตาราง */
+}
+
+/* ปุ่มดูรายละเอียด */
+.detail-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #19ac45;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.detail-btn:hover {
+    background-color: #2ecc71; /* เปลี่ยนสีเมื่อเลื่อนเมาส์ */
+}
+
+/* จัดการตำแหน่งปุ่ม */
+.button-container {
+    display: flex;
+    justify-content: center; /* จัดกลางในแนวนอน */
+    margin-top: 20px; /* เว้นระยะจากด้านบน */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5619;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #19ac45;
+}
+
+.new-notification {
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+.paid {
+    color: green;
+    font-weight: bold;
+}

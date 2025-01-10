@@ -1,0 +1,129 @@
+/* editservice.css */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+/* Styling for the main heading */
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px; /* ขนาดฟอนต์ใหญ่ขึ้น */
+    font-weight: 600; /* ทำให้ตัวหนาขึ้น */
+    color: #000000;
+    margin: 10px 0 20px; /* เพิ่มระยะห่างด้านบนและด้านล่าง */
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    background-color: #ffffff;
+    padding: 30px; /* เพิ่ม padding ภายใน */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* ปรับความเข้มของเงา */
+    width: 450px; /* เพิ่มความกว้างของฟอร์ม */
+    margin: 30px auto; /* เพิ่มระยะห่างด้านบน */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* จัดเรียงเนื้อหาในฟอร์มให้เป็นแนวตั้ง */
+}
+
+/* Input and select field styling */
+input[type="number"],
+select {
+    font-family: 'Prompt', sans-serif;
+    width: 100%; /* ขนาด 100% */
+    padding: 12px; /* ระยะห่างภายในเพิ่มขึ้น */
+    border: 1px solid #ccc; /* สีกรอบ */
+    border-radius: 5px; /* มุมโค้ง */
+    margin: 10px 0; /* เพิ่มระยะห่างด้านบนและด้านล่าง */
+    font-size: 16px; /* ขนาดฟอนต์ */
+}
+
+/* Button styling */
+button[type="submit"] {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ff5619; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่มีกระดุม */
+    padding: 10px 30px; /* ระยะห่างภายในเพิ่มขึ้น */
+    border-radius: 15px; /* มุมโค้ง */
+    cursor: pointer; /* แสดงรูปมือเมื่อชี้ */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    transition: background-color 0.3s; /* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง */
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #19ac45; /* สีพื้นหลังเมื่อ hover */
+}
+
+/* ลิงค์ยกเลิก */
+a {
+    display: inline-block; /* แสดงเป็นบล็อก */
+    color: #3d5a80; /* สีตัวอักษร */
+    font-size: 16px; /* ขนาดตัวอักษร */
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+/* Form Styles */
+form {
+    width: 90%; /* ปรับความกว้างให้กว้างขึ้น */
+    max-width: 500px; /* ความกว้างสูงสุด */
+    margin: 50px auto; /* จัดให้อยู่กลางและมีระยะห่างด้านบน */
+    padding: 20px; /* Padding รอบๆ */
+    background-color: #ffffff; /* สีพื้นหลังของฟอร์ม */
+    border-radius: 10px; /* มุมโค้ง */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+/* Heading styles */
+h2 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px; /* ขนาดฟอนต์ของหัวข้อ */
+    font-weight: 600; /* น้ำหนักตัวอักษร */
+    color: #000000; /* สีตัวอักษร */
+    text-align: center; /* จัดกลาง */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+/* Styles for account information */
+.account-info {
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+/* Styles for each form group */
+.form-group {
+    margin-bottom: 15px; /* ระยะห่างระหว่างกลุ่ม */
+}
+
+/* Label styles */
+label {
+    font-weight: 500; /* น้ำหนักตัวอักษร */
+    margin-bottom: 5px; /* ระยะห่างด้านล่าง */
+    display: block; /* แสดงเป็นบล็อก */
+}
+
+/* Input styles */
+input[type="text"] {
+    font-family: 'Prompt', sans-serif;
+    width: 100%; /* ความกว้างเต็ม */
+    padding: 10px; /* Padding */
+    border: 1px solid #ccc; /* ขอบ */
+    border-radius: 5px; /* มุมโค้ง */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    background-color: #f7f7f7; /* สีพื้นหลังสำหรับ input ที่อ่านเฉยๆ */
+    cursor: not-allowed; /* แสดงว่าไม่สามารถแก้ไขได้ */
+    transition: border-color 0.3s; /* เอฟเฟกต์เมื่อเปลี่ยนสี */
+}
+
+input[type="text"]:hover {
+    border-color: #007bff; /* เปลี่ยนสีขอบเมื่อเอาเมาส์ไปชี้ */
+}
+
+/* Button styles */
+.btn {
+    font-family: 'Prompt', sans-serif;
+    display: block; /* แสดงเป็นบล็อก */
+    width: 100%; /* ความกว้างเต็ม */
+    max-width: 200px; /* ความกว้างสูงสุด */
+    padding: 10px; /* Padding รอบๆ */
+    background-color: #ff5619; /* สีพื้นหลังของปุ่ม */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่แสดงขอบ */
+    border-radius: 15px; /* มุมโค้ง */
+    text-align: center; /* จัดกลาง */
+    text-decoration: none; /* ไม่ให้มีเส้นใต้ */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    margin: 20px auto; /* ระยะห่างด้านบน-ล่าง และจัดกลาง */
+    transition: background-color 0.3s; /* เอฟเฟกต์เมื่อเปลี่ยนสี */
+}
+
+.btn:hover {
+    background-color: #19ac45; /* สีเข้มขึ้นเมื่อเอาเมาส์ไปชี้ */
+}
+
+/* Styles for the image in the QR code */
+.account-info img {
+    width: 200px; /* ขนาดของ QR Code */
+    height: auto; /* ให้สูงอัตโนมัติตามสัดส่วน */
+}

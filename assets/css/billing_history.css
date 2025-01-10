@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+.header button:hover {
+    background-color: #e0fbfc;
+}
+
+/* Title styling */
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+    margin-top: 20px; /* Add space above the form */
+}
+
+.input-group {
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    margin-bottom: 30px; /* Space between each input group */
+}
+
+.input-group label {
+    margin-right: 10px; /* Space between label and input */
+    font-weight: bold;
+}
+
+/* Adjusting input and select styles */
+input[type="text"],
+input[type="number"],
+select {
+    font-family: 'Prompt', sans-serif;
+    flex: 1; /* Allow inputs to take available space */
+    padding: 8px; /* Padding for inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 10px; /* Space between input and next label */
+}
+
+/* Add bottom margin to inputs for spacing */
+input[type="text"],
+input[type="number"],
+select {
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+select {
+    width: 235px; /* Set the desired width for the month select */
+}
+
+.button-group {
+    display: flex;
+    gap: 5px; /* ระยะห่างระหว่างปุ่ม */
+    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+}
+
+.button-group button {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ff5619; /* สีพื้นหลังของปุ่ม */
+    color: white; /* สีของข้อความ */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #19ac45; /* สีเมื่อชี้ที่ปุ่ม */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge borders */
+    margin-top: 20px; /* Space above the table */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    background-color: #ffffff; /* Table background */
+    border: 1px solid #ddd; /* Table border */
+}
+
+th, td {
+    padding: 15px; /* Cell padding */
+    text-align: center; /* Center text */
+    border: 1px solid #ddd; /* Add border around cells */
+}
+
+th {
+    background-color: #4682b4; /* Header background color */
+    color: white; /* Header text color */
+    font-weight: bold; /* Bold text in header */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Light background on row hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width for sidebar */
+        position: relative; /* Change position */
+        height: auto; /* Adjust height */
+    }
+    .container {
+        margin-left: 0; /* No margin for container */
+    }
+}

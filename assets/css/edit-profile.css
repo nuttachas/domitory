@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Thai:wght@300&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 1rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+}
+
+/* General Styles */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3d5a80;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav a.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 30px;
+    text-align: center;
+}
+
+form {
+    font-family: 'Prompt', sans-serif;
+    font-size: 17px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Maximum width */
+    margin: 100px auto; /* Center the form */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+.input-group {
+    width: 100%;
+}
+
+label {
+    font-family: 'Prompt', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    font-family: 'Prompt', sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    font-family: 'Prompt', sans-serif;
+    border-color: #3d5a80;
+    outline: none;
+    box-shadow: 0 0 5px rgba(61, 90, 128, 0.5);
+}
+
+.input-group-row {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group-row .input {
+    flex: 1;
+}
+
+/* การจัดวาง input-group ในแถวเดียวกัน */
+.input-group2 {
+    display: flex;
+    gap: 30px; /* ระยะห่างระหว่างกล่อง */
+    width: 100%;
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+}
+
+.input-group2 input {
+    flex-grow: 1; /* ขยาย input ให้ยาวขึ้น */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* เพิ่ม width เพื่อทำให้ยาวขึ้น */
+}
+
+.input-group2 > .input-group {
+    flex: 1;
+}
+
+/* ปรับขนาดปุ่มให้เล็กลงและจัดให้อยู่ตรงกลาง */
+button {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ff5619;
+    color: white;
+    padding: 10px 12px;
+    width: 40%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+    display: block; /* ทำให้ปุ่มเป็นบล็อกเต็มพื้นที่ */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    text-align: center; /* จัดข้อความในปุ่มให้อยู่ตรงกลาง */
+}
+
+button:hover {
+    background-color: #19ac45;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* จัดปุ่มยกเลิกให้อยู่ตรงกลาง */
+a {
+    display: block; /* เปลี่ยนจาก inline-block เป็น block เพื่อให้เต็มความกว้าง */
+    margin: 1px auto 0 auto; /* จัดระยะห่างและทำให้ลิงก์อยู่ตรงกลาง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    color: #3d5a80; /* สีตัวอักษร */
+    text-decoration: none; /* ไม่แสดงเส้นใต้ */
+    font-size: 16px; /* ลดขนาดฟอนต์ */
+}
+
+/* เปลี่ยนสีลิงค์เมื่อโฮเวอร์ */
+a:hover {
+    text-decoration: underline; /* แสดงเส้นใต้เมื่อโฮเวอร์ */
+}

@@ -1,0 +1,260 @@
+/* editservice.css */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+}
+
+.role-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.role-box {
+    font-family: 'Prompt', sans-serif;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px 30px;
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.role-box h2 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.role-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.role-box input[type="text"] {
+    font-family: 'Prompt', sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.role-box .btn {
+    font-family: 'Prompt', sans-serif;
+    background-color: #3d5a80;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.role-box .btn:hover {
+    background-color: #ff5d0c;
+}
+
+/* เพิ่มใน home.css หรือไฟล์ CSS ที่เกี่ยวข้อง */
+
+.apartment-list {
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.apartment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* จัดให้อยู่ตรงกลาง */
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    flex-direction: column; /* จัดข้อมูลให้อยู่ในแนวตั้ง */
+}
+
+.apartment-info {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px; /* เพิ่มช่องว่างระหว่างข้อมูลหอพักกับปุ่ม */
+    margin-left: 100px;
+}
+
+.apartment-buttons {
+    display: flex;
+    gap: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+    justify-content: center; /* จัดปุ่มให้อยู่ตรงกลาง */
+    margin-left: 100px;
+}
+
+.btn-manage, .btn-delete {
+    font-family: 'Prompt', sans-serif;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.btn-manage:hover, .btn-delete:hover {
+    background-color: #d81c2f;
+}
+
+.renter-list {
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.renter-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* จัดให้อยู่ตรงกลาง */
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    flex-direction: column; /* จัดข้อมูลให้อยู่ในแนวตั้ง */
+}
+
+.renter-info {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px; /* เพิ่มช่องว่างระหว่างข้อมูลหอพักกับปุ่ม */
+    margin-left: 100px;
+}
+
+.renter-buttons {
+    display: flex;
+    gap: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+    justify-content: center; /* จัดปุ่มให้อยู่ตรงกลาง */
+    margin-left: 100px;
+}
+
+.btn-manage {
+    font-family: 'Prompt', sans-serif;
+    background-color: #19ac45;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.btn-manage:hover {
+    background-color: #ff5619;
+}
+
+.btn-delete {
+    font-family: 'Prompt', sans-serif;
+    background-color: #d81c2f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.btn-delete:hover {
+    background-color: #ff5619;
+}
+.image-box {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-box img {
+    max-width: 400px;
+    height: auto;
+    border: 2px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
+}

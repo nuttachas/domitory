@@ -1,0 +1,24 @@
+/* CSS สำหรับ SweetAlert */
+.sweet-alert h2 {
+    font-family: 'Kanit', sans-serif; /* เปลี่ยนฟอนต์ใน SweetAlert */
+}
+
+.sweet-alert p {
+    font-family: 'Kanit', sans-serif; /* เปลี่ยนฟอนต์ในข้อความ SweetAlert */
+}
+
+.sweet-alert button {
+    font-family: 'Kanit', sans-serif; /* เปลี่ยนฟอนต์ในปุ่ม SweetAlert */
+}
+
+/* เพิ่มสไตล์เพิ่มเติมถ้าต้องการ */
+.swal-button {
+    border-radius: 8px; /* ปรับขนาดมุมของปุ่ม */
+    padding: 10px 20px; /* ปรับขนาดของปุ่ม */
+    font-size: 16px; /* ขนาดฟอนต์ในปุ่ม */
+}
+
+/* สามารถเพิ่มสีพื้นหลังของ SweetAlert ได้ */
+.swal-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* เพิ่มสีพื้นหลังของ overlay */
+}

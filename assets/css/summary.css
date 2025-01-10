@@ -1,0 +1,165 @@
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+}
+
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+.header button:hover {
+    background-color: #e0fbfc;
+}
+
+/* Title styling */
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+}
+
+/* เพิ่มการจัดตำแหน่งกลางสำหรับฟอร์ม */
+form {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* ใช้ auto เพื่อจัดกลางในแนวนอน */
+    width: 100%;
+    max-width: 300px; /* Width of the form */
+    display: flex; /* ใช้ flexbox สำหรับการจัดเรียง */
+    flex-direction: column; /* แนวตั้ง */
+    align-items: center; /* จัดกลางแนวนอน */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    font-family: 'Prompt', sans-serif;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ff5619;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #19ac45;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2980B9;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Chart styles */
+canvas {
+    width: 100%; /* กำหนดความกว้างให้เต็มพื้นที่ */
+    max-width: 1500px; /* กำหนดความกว้างสูงสุด */
+    height: 400px; /* กำหนดความสูงของกราฟ */
+    margin: -100px auto; /* จัดกลางในแนวนอน */
+    border-radius: 10px; /* ขอบมน */
+    background-color: white; /* พื้นหลังของกราฟ */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* เงาให้ดูโดดเด่น */
+}
+
+/* เพิ่มการจัดรูปแบบที่อยู่รอบๆ กราฟ */
+.chart-container {
+    display: flex;
+    justify-content: center; /* จัดกลางในแนวนอน */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    padding: 20px; /* เพิ่มพื้นที่รอบๆ กราฟ */
+    background-color: #f9f9f9; /* พื้นหลังของคอนเทนเนอร์ */
+    border-radius: 10px; /* ขอบมน */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงาให้ดูโดดเด่น */
+}

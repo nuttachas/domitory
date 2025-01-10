@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Thai:wght@300&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+/* Main Heading */
+h1 {
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Add Button */
+.add-button {
+    background-color: #ff5619;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.add-button-container {
+    display: flex;
+    justify-content: center; /* จัดปุ่มให้อยู่ตรงกลางแนวนอน */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.add-button:hover {
+    background-color: #19ac45;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 90%; /* กำหนดขนาดสูงสุดของตาราง */
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto; /* จัดกลางตาราง */
+}
+
+th, td {
+    padding: 10px; /* ลดค่า padding ด้านบนและล่างลง */
+    text-align: center; /* จัดตำแหน่งข้อความให้ตรงกลาง */
+    border: 1px solid #f1f1f1; /* เส้นแบ่งระหว่างเซลล์ */
+}
+
+th {
+    background-color: #4682b4;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #ffffff; /* สีพื้นหลังของเซลล์ */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* สีพื้นหลังของแถวคู่ */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* สีพื้นหลังเมื่อวางเมาส์เหนือแถว */
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-warning {
+    background-color: #ffa500;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #ff7f00;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Button container in table */
+td button {
+    margin-right: 10px;
+}
+
+
+
+
+

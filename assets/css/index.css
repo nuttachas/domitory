@@ -1,0 +1,131 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Body */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #3d5a80;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 1rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Kanit", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+}
+
+/* Main */
+
+main {
+    font-family: Arial, sans-serif;
+    background-color: #e0fbfc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Basic */
+
+h1 {
+    font-family: "Prompt", sans-serif;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Prompt", sans-serif;
+    font-size: 35px;
+    color: #274c77;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Button */
+
+a button {
+    font-family: "Kanit", sans-serif;
+    background-color: #ee6c4d;
+    color: white;
+    border: none;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+a button:hover {
+    background-color: #ff4500;
+}
+
+/* Footer */
+
+footer {
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    margin-top: 50px;
+}
+

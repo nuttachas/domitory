@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+.room-selection {
+    margin-top: 20px;
+}
+.room-selection table {
+    width: 50%;
+    margin: auto;
+}

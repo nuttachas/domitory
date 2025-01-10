@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Form styling */
+form {
+    margin: 20px auto; /* Center form on the page */
+    display: flex; /* Flex layout for the form */
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Space between form elements */
+    max-width: 300px; /* Maximum width for the form */
+}
+
+/* Input styling */
+input[type="text"], select {
+    font-family: 'Prompt', sans-serif;
+    flex: 1; /* Allow inputs to grow */
+    padding: 8px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 14px; /* Smaller font size for inputs */
+    width: 100%; /* Full width for inputs */
+}
+
+.button-container {
+    display: flex; /* Flex layout for the buttons */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Button styling for search */
+.search-button {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ff5619; /* Button background color */
+    color: #fff; /* White text */
+    padding: 8px 12px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Button hover effect for search */
+.search-button:hover {
+    background-color: #19ac45; /* Darker shade on hover */
+}
+
+/* Button styling for view all */
+.view-all-button {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ff5619; /* Button background color */
+    color: #fff; /* White text */
+    padding: 8px 12px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Button hover effect for view all */
+.view-all-button:hover {
+    background-color: #19ac45; /* Darker shade on hover */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-top: 20px; /* Margin above table */
+}
+
+/* ปรับรูปแบบ input file */
+input[type="file"] {
+    margin: 0; /* ยกเลิก margin */
+    font-size: 16px;
+    padding: 5px; /* เพิ่ม padding ถ้าจำเป็น */
+    font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ที่ต้องการ */
+    border: 1px solid #ccc; /* ขอบของ input */
+    border-radius: 5px; /* มุมของ input */
+}
+
+th, td {
+    padding: 10px; /* Padding for table cells */
+    border: 1px solid #ddd; /* Light border for cells */
+    text-align: center; /* Center align text */
+    background-color: #fff;
+}
+
+th {
+    background-color: #4682b4; /* Header background color */
+    color: #fff; /* White text for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for rows */
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+/* Error message styling */
+.error {
+    color: red; /* Red color for error messages */
+    margin-top: 20px; /* Margin above error message */
+}
+
+/* Styles for displaying images */
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.9);
+    }
+    
+    /* Modal Content (The Image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+    }
+    
+    /* Add Animation */
+    .modal-content, #caption { 
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+    }
+    
+    @keyframes zoom {
+        from {transform: scale(0.1)} 
+        to {transform: scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    

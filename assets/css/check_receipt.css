@@ -1,0 +1,153 @@
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+h2 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #4682b4;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+table td {
+    font-size: 1rem;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+button[type="submit"] {
+    font-family: 'Prompt', sans-serif;
+    width: auto; 
+    padding: 12px 20px; 
+    background-color: #ff5619;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px; /* Slightly smaller font size */
+    cursor: pointer;
+    display: block; /* Ensures it's treated as a block-level element */
+    margin: 20px auto; /* Center the button horizontally */
+}
+
+button[type="submit"]:hover {
+    background-color: #19ac45;
+}
+
+/* Checkbox column */
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.detail-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #19ac45;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.detail-btn:hover {
+    background-color: #ff5619;
+}
+
+.detail-btn:active {
+    background-color: #004085;
+}

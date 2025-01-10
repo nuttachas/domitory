@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Thai:wght@300&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+.header button:hover {
+    background-color: #e0fbfc;
+}
+
+/* Form */
+form {
+    background-color: #fff;
+    padding: 25px; /* ลดการ padding */
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* ปรับลดขนาดสูงสุด */
+    margin: 40px auto;
+}
+
+/* หัวข้อ */
+h1 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px; /* ลดขนาดหัวข้อ */
+    margin-bottom: 30px; /* ลดระยะห่าง */
+    color: #000000;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 18px; /* ลดขนาดหัวข้อ */
+    margin-bottom: 20px; /* ลดระยะห่าง */
+    color: #000000;
+    font-weight: 400;
+}
+/* Form-row สำหรับจัดการ label ให้อยู่ในบรรทัดเดียวกัน */
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* ปรับ wrap สำหรับการแสดงผลหลายบรรทัดถ้าจอแคบ */
+    align-items: center; /* จัด label และ select ให้อยู่ตรงกลางแนวตั้ง */
+    gap: 15px; /* เพิ่มช่องว่างระหว่าง label และฟิลด์ */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* จัด label และฟิลด์ในแนวนอน */
+    gap: 1px; /* ช่องว่างระหว่าง label และ select/input */
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #000000;
+    width: auto; /* ให้ขนาดของ label เป็นแบบอัตโนมัติ */
+    margin-right: 10px;
+    display: inline-block; /* ปรับให้ label เป็นบล็อกแนวนอน */
+}
+
+input[type="number"], select {
+    font-family: 'Prompt', sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    width: 187px; /* กำหนดขนาดฟิลด์ */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* ปุ่ม submit */
+button[type="submit"] {
+    font-family: 'Prompt', sans-serif;
+    width: 20%;
+    padding: 10px; /* ปรับลดการ padding */
+    background-color: #ff5619;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #19ac45;
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px; /* ลดการ padding */
+    margin-bottom: 20px; /* ลดระยะห่าง */
+    border-radius: 10px;
+    background-color: #fafafa; /* Light background for the fieldset */
+}
+
+legend {
+    font-size: 16px; /* ลดขนาดฟอนต์ */
+    padding: 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Toggle fields (มิเตอร์) */
+#electricity_meter_fields, #water_meter_fields {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+    
+    form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .header button {
+        margin-top: 10px;
+    }
+}

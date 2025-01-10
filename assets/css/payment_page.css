@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+.header button:hover {
+    background-color: #e0fbfc;
+}
+
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; /* ระยะห่างระหว่างองค์ประกอบ */
+    text-align: left; /* ให้ฟอร์มดูมีระเบียบ */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: -10px;
+    font-weight: 700;
+    color: #ff0404;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: -10px;
+    font-weight: 600;
+    color: #000000;
+}
+
+p {
+    text-align: center;
+    margin-top: -10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.qr-code img {
+        width: 150px; /* ปรับขนาดตามที่ต้องการ */
+        height: auto; /* ให้ความสูงปรับอัตโนมัติตามอัตราส่วน */
+    }
+
+form input[type="file"] {
+    font-family: "Prompt", sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    width: 100%; /* ปรับให้ input กว้างเท่ากับฟอร์ม */
+}
+
+form button {
+    font-family: "Prompt", sans-serif;
+    background-color: #ff5619;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* เพิ่มขนาดปุ่มให้ชัดเจน */
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* ให้ปุ่มกว้างเท่ากับฟอร์ม */
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.9);
+    }
+    
+    /* Modal Content (The Image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+    
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+    }
+    
+    /* Add Animation */
+    .modal-content, #caption { 
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+    }
+    
+    @keyframes zoom {
+        from {transform: scale(0.1)} 
+        to {transform: scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+/* จัดปุ่มยกเลิกให้อยู่ตรงกลาง */
+a {
+    display: block; /* เปลี่ยนจาก inline-block เป็น block เพื่อให้เต็มความกว้าง */
+    margin: 1px auto 0 auto; /* จัดระยะห่างและทำให้ลิงก์อยู่ตรงกลาง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    color: #3d5a80; /* สีตัวอักษร */
+    text-decoration: none; /* ไม่แสดงเส้นใต้ */
+    font-size: 16px; /* ลดขนาดฟอนต์ */
+}
+
+/* เปลี่ยนสีลิงค์เมื่อโฮเวอร์ */
+a:hover {
+    text-decoration: underline; /* แสดงเส้นใต้เมื่อโฮเวอร์ */
+}

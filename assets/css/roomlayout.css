@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+    
+}
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+h1 {
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* สไตล์สำหรับฟอร์มเพิ่มห้อง */
+.add-room-form {
+    margin: 20px auto; /* Centers the form horizontally and adds top margin */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f9fa; /* สีพื้นหลัง */
+    max-width: 300px; /* Set a maximum width */
+    width: 100%; /* Make it responsive */
+}
+
+.add-room-form input,
+.add-room-form select {
+    font-family: 'Prompt', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* สไตล์สำหรับปุ่ม */
+.add-room-form button {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ff5619; /* สีพื้นหลังปุ่ม */
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%; /* ปุ่มเต็มความกว้าง */
+}
+
+.add-room-form button:hover {
+    background-color: #19ac45; /* สีเมื่อ hover */
+}
+
+/* สไตล์สำหรับตารางห้อง */
+.room-layout table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.room-layout th,
+.room-layout td {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    
+}
+
+.room-layout th {
+    background-color: #4682b4; /* สีพื้นหลังของ header ตาราง */
+    color: white;
+}
+
+.room-layout tr:nth-child(even) {
+    background-color: #f9f9f9; /* สีพื้นหลังของแถวคู่ */
+}
+
+.room-layout tr:hover {
+    background-color: #f1f1f1; /* สีเมื่อ hover แถว */
+}
+
+/* สไตล์สำหรับปุ่มในตาราง */
+.room-layout button {
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.room-layout button:hover {
+    background-color: #c0392b; /* สีเมื่อ hover */
+}
+
+/* สไตล์สำหรับปุ่มในตาราง */
+.room-layout a {
+    font-size: 16px;
+    background-color: #ffa500; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.room-layout a:hover {
+    background-color: #ff7f00; /* สีเมื่อ hover */
+}
+

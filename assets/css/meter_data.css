@@ -1,0 +1,143 @@
+/* meter.css */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset เบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #3d5a80;
+    padding: 2rem 2rem;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+li a i {
+    margin-right: 8px; /* Space between icon and text /
+}
+
+li a:hover {
+    color: #4280c3; / Change color on hover */
+}
+
+.header button {
+    margin-top: 1px; /* Adjust this value to move the button up or down */
+    padding: 10px 15px; /* Adjust padding if necessary */
+    font-size: 16px; /* Smaller font size */
+}
+
+/* Form styling */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;  /* Adjust form width */
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; /* Aligning elements evenly */
+}
+
+h1 {
+    font-family: "Prompt", sans-serif;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Input and select fields */
+select, input[type="file"], input[type="number"] {
+    width: 100%; /* Full width input */
+    margin-bottom: 20px; /* Space between inputs */
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Submit button */
+button {
+    background-color: #ee6c4d;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 200px; /* ความกว้างของปุ่ม */
+    display: block;
+    margin-left: auto; /* ทำให้ปุ่มไปตรงกลาง */
+    margin-right: auto; /* ทำให้ปุ่มไปตรงกลาง */
+}
+
+button:hover {
+    background-color: #5b8a4a;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+}
+
+
