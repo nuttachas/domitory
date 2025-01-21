@@ -1,4 +1,9 @@
 <?php
+$mysqli = new mesqli("demosql-7ea2ab1fc8-wpdbserver.mysql.database.azure.com", "kcokhgqjfd", "nu64311591.", "ssp");
+if ($mysqli->connect-errno) {
+	echo "Failed to connect to MySQL" (" . $mysqli->connect-errno . ")" . $mysqli->connect-errno;
+}
+<?php
 session_start();
 include('server.php');
 
