@@ -1,7 +1,7 @@
 <?php
 
     	$host = "dbsql.mysql.database.azure.com";
-	$username = "kcokhgqjfd";
+	$username = "nuttacha";
 	$password = "nu64311591.";
 	$database = "nut";
 
