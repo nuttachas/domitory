@@ -1,15 +1,6 @@
 <?php
 session_start();
 include('server.php');
-    $host = "demosql-7ea2ab1fc8-wpdbserver.mysql.database.azure.com";
-	$username = "kcokhgqjfd";
-	$password = "nu64311591.";
-	$database = "nut";
-
-	$mysqli = new mysqli("localhost", "root", "", "ssp");
-	if ($mysqli->connect-error) {
-		echo "Failed to connect to MySQL" (" . $mysqli->connect-error . ")" . $mysqli->connect-error;) 
-  }
 
 $errors = array();
 
